@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Schedule from './Schedule';
 import HomePage from './HomePage';
 import Header from './Header';
-
+import SeasonsList from './SeasonsList';
 
 function App(){
   return(
@@ -11,6 +11,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
+        <Route exact path='/seasonslist' component={SeasonsList} />
         <Route exact path='/schedule' component={Schedule} />
       </Switch>
     </div>

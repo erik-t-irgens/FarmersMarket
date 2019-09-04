@@ -2,26 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Item(props){
-    var getStyle = () => {
-        return  {
+  var getStyle = () => {
+    return  {
             
-          width : '100'
+      width : '100'
             
-        };
-      };
-    return (
-        <div>
-            <img style = {getStyle()} src={props.imgurl} alt = {`img of ${props.name}`}/>
-            <h1>{props.name}</h1>
-            <p>{props.price}</p>
-        </div>
-    );
+    };
+  };
+  return (
+    <div>
+      <img style = {getStyle()} src={props.imgurl} alt = {`img of ${props.name}`}/>
+      <h6>{props.name}</h6>
+      <p>{props.price}</p>
+    </div>
+  );
 }
 
 Item.PropTypes= {
-    name: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    imgurl: PropTypes.string
-}
+  name: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  imgurl: PropTypes.string
+};
 
 export default Item;

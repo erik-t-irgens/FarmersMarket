@@ -1,22 +1,23 @@
 import React from 'react';
 import Seasons from './Seasons';
+import GetSeasonDataArr from './Data';
 
-var masterSeasonsList = [
-
-];
 
 function SeasonsList() {
-    return (
-        <div>
-            {masterSeasonsList.map((season, index) =>
-                <Seasons name={season.name}
-                imgurl={season.imgurl}
-                items={season.items}
-                key={index}/>
+  return (
+    <div>
+      
+      {
+          console.log(GetSeasonDataArr())}
+          {GetSeasonDataArr().map((season, index) =>
+        <Seasons name={season.name}
+          // imgurl={season.imgurl}
+          items={season.items}
+          key={index}/>
                 
-            )}
-        </div>
-    );
+      )}
+    </div>
+  );
 }
 
 export default SeasonsList;
