@@ -11,3 +11,7 @@ function HomePage(){
 }
 
 export default HomePage;
+
+
+//days at location
+//produce/season

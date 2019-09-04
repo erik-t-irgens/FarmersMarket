@@ -1,8 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import SecondLink from './SecondLink';
+import Schedule from './Schedule';
 import HomePage from './HomePage';
 import Header from './Header';
+
 
 function App(){
   return(
@@ -10,7 +11,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route exact path='/secondlink' component={SecondLink} />
+        <Route exact path='/schedule' component={Schedule} />
       </Switch>
     </div>
   );
