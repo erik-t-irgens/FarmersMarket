@@ -1,9 +1,16 @@
+  
 import React from 'react';
 import Seasons from './Seasons';
 import GetSeasonDataArr from './Data';
 
 
 function SeasonsList() {
+    var SeasonsStyle =() => {
+        return {
+           
+        }
+    }
+
   return (
     <div>
       
