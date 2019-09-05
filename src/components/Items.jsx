@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Item(props){
   var imgStyle = () => {
     return  {
-      height: '150',
+      height: '100',
       width : 'auto'
     };
   };
@@ -13,12 +13,12 @@ function Item(props){
     return  {
             
       border : "5px solid lightgray",
-      color : "red",
+      color : "black",
       width : "200px",
       backgroundColor : "darkgray",
       display : "inline-block",
       height: "200px",
-      margin : "5px",
+      marginLeft : "5px",
       alignItems: "center",
       alignSelf: "center"
     };
@@ -28,8 +28,8 @@ function Item(props){
   return (
     <div style = {itemStyle()}>
       <img style = {imgStyle()} src={props.imgurl} alt = {`img of ${props.name}`}/>
-      <h6>{props.name}</h6>
-      <p>{props.price}</p>
+      <p>{props.name}</p>
+      <p>${props.price}</p>
     </div>
   );
 }

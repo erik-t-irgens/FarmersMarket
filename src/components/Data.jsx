@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 var Items = {
   apple : {
@@ -10,7 +10,7 @@ var Items = {
     name : 'Tomato',
     price : '0.80',
     imgurl : 'https://media.istockphoto.com/photos/three-juicy-red-tomatoes-isolated-on-white-background-picture-id831570242?k=6&m=831570242&s=612x612&w=0&h=nEanpSUl2vfqWEl4824HGP5QAP-WDLAjhnp-ZVIBTks='
-},
+  },
   banana : {
     name : 'Banana',
     price : '0.25',
@@ -54,50 +54,29 @@ var Items = {
     
 };
 
-function GetSeasonData()
-{ 
-    return SeasonData = {
-    spring : {
-        name: 'Spring',
-        items: [Items.flowers, Items.tomato, Items.strawberries, Items.peach, Items.banana]
-    },
-    summer : {
-        name: 'Summer',
-        items: [Items.tomato, Items.banana, Items.strawberries, Items.orange]
-    },
-    fall : {
-        name: 'Fall',
-        items: [Items.squash, Items.pumpkin, Items.apple,  Items.banana]
-    },
-    winter : {
-        name: 'Winter',
-        items: [ Items.banana, Items.cranberries, Items.pumpkin]
-    }
 
-    };
-}
 
 function GetSeasonDataArr()
 { 
-    return [
+  return [
     {
-        name: 'Spring',
-        items: [Items.flowers, Items.tomato, Items.strawberries, Items.peach, Items.banana]
+      name: 'Spring',
+      items: [Items.flowers, Items.tomato, Items.strawberries, Items.peach, Items.banana]
     },
     {
-        name: 'Summer',
-        items: [Items.tomato, Items.banana, Items.strawberries, Items.orange]
+      name: 'Summer',
+      items: [Items.tomato, Items.banana, Items.strawberries, Items.orange]
     },
     {
-        name: 'Fall',
-        items: [Items.squash, Items.pumpkin, Items.apple,  Items.banana]
+      name: 'Fall',
+      items: [Items.squash, Items.pumpkin, Items.apple,  Items.banana]
     },
     {
-        name: 'Winter',
-        items: [ Items.banana, Items.cranberries, Items.pumpkin]
+      name: 'Winter',
+      items: [ Items.banana, Items.cranberries, Items.pumpkin]
     }
-]
+  ];
 }
 
-// export default GetSeasonData;
+
 export default GetSeasonDataArr;

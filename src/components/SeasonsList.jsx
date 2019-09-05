@@ -5,18 +5,15 @@ import GetSeasonDataArr from './Data';
 
 
 function SeasonsList() {
-    var SeasonsStyle =() => {
-        return {
+  var SeasonsStyle =() => {
+    return {
            
-        }
-    }
+    };
+  };
 
   return (
     <div>
-      
-      {
-          console.log(GetSeasonDataArr())}
-          {GetSeasonDataArr().map((season, index) =>
+      {GetSeasonDataArr().map((season, index) =>
         <Seasons name={season.name}
           // imgurl={season.imgurl}
           items={season.items}

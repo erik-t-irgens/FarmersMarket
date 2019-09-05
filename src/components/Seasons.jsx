@@ -6,11 +6,19 @@ import { Link } from 'react-router-dom';
 
 function Season(props){
     var titleStyle = () => {
-         fontSize : "30px"
+      return {
+        fontSize : "30px",
+      }    
+    }
+    var divStyle = () => {
+      return {
+        textAlign: "center",
+        fontSize: "20"
+      }
     }
   return (
-    <div>
-      <Link style = {titleStyle()} to={`/${props.name}`}>{props.name}</Link> 
+    <div style= {divStyle()}>
+      <Link style = {titleStyle()} to={`/${props.name}`}>{props.name}</Link><br></br> 
       {props.items.map((item, index) =>
         <Items name={item.name}
           price={item.price}
