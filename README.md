@@ -12,6 +12,7 @@ This application is a simple application that introduces the concepts of React, 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **User should be able to see Homepage "/"** | localhost:8080/ | Homepage with Header links  |
+| **User should be able to navigate to other pages using the header links** | localhost:8080/seasons | Seasons page will display with generated items  |
 
 ## Setup/Installation Requirements
 
