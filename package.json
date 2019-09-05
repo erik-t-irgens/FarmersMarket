@@ -32,11 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/local-machine/help-queue.git"
+    "url": "git+https://github.com/erik-t-irgens/FarmersMarket.git"
   },
   "bugs": {
-    "url": "https://github.com/local-machine/help-queue/issues"
+    "url": "https://github.com/erik-t-irgens/FarmersMarket/issues"
   },
-  "homepage": "https://github.com/local-machine/help-queue#readme",
+  "homepage": "https://github.com/erik-t-irgens/FarmersMarket#readme",
   "description": ""
 }
