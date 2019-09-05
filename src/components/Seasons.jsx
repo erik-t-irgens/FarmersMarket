@@ -1,12 +1,16 @@
+  
 import React from 'react';
 import Items from './Items';
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
 
 function Season(props){
+    var titleStyle = () => {
+         fontSize : "30px"
+    }
   return (
     <div>
-      <h3>{props.name}</h3>
+      <Link style = {titleStyle()} to={`/${props.name}`}>{props.name}</Link> 
       {props.items.map((item, index) =>
         <Items name={item.name}
           price={item.price}
