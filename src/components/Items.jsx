@@ -2,16 +2,32 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Item(props){
-  var getStyle = () => {
+  var imgStyle = () => {
     return  {
-            
-      width : '100'
-            
+      height: '150',
+      width : 'auto'
     };
   };
+
+  var itemStyle = () => {
+    return  {
+            
+      border : "5px solid lightgray",
+      color : "red",
+      width : "200px",
+      backgroundColor : "darkgray",
+      display : "inline-block",
+      height: "200px",
+      margin : "5px",
+      alignItems: "center",
+      alignSelf: "center"
+    };
+  };
+
+  
   return (
-    <div>
-      <img style = {getStyle()} src={props.imgurl} alt = {`img of ${props.name}`}/>
+    <div style = {itemStyle()}>
+      <img style = {imgStyle()} src={props.imgurl} alt = {`img of ${props.name}`}/>
       <h6>{props.name}</h6>
       <p>{props.price}</p>
     </div>
