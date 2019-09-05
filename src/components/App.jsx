@@ -7,6 +7,8 @@ import SeasonsList from './SeasonsList';
 import PropTypes from 'prop-types';
 import GetSeasonDataArr from './Data';
 import Seasons from './Seasons';
+import Error404 from './Error404';
+
 function App(){
   return(
     <div>
@@ -39,6 +41,7 @@ function App(){
           items = {GetSeasonDataArr()[3].items}
         isAuthed = {true}
         />}/>
+        <Route component={Error404} />
       </Switch>
     </div>
   );
